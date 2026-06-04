@@ -28,9 +28,7 @@ jobs:
 
       - name: Install lark-cli
         run: |
-          curl -L https://github.com/larksuite/cli/releases/latest/download/lark-cli-linux-amd64 -o lark-cli
-          chmod +x lark-cli
-          sudo mv lark-cli /usr/local/bin/
+          npx @larksuite/cli@latest install
 
       - name: Get Feishu Access Token
         run: |
